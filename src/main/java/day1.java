@@ -20,10 +20,10 @@ public class day1 {
     @BeforeMethod
     public void setup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setBrowserName("firefox");
+        caps.setBrowserName("chrome");
         caps.setPlatform(Platform.LINUX);
         driver = new RemoteWebDriver(new
-                URL("http://seleniumhub:4444/wd/hub"), caps);
+                URL("http://51.255.211.167:4444/wd/hub"), caps);
         driver.get("http://51.255.211.167:8090/webapp");
     }
     @Test
